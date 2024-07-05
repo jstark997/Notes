@@ -53,3 +53,19 @@ Disadvantages:
 - Not hoisted, so they must be defined before they are called.
 - Cannot be used as constructors.
 - May be less readable for those unfamiliar with the syntax.
+
+## Function Types
+
+Functions are values that have types like objects have types.
+
+Exammple:
+
+```typescript
+function calculate(
+  a: number,
+  b: number,
+  calcFn: (a: number, b: number) => number
+) {
+  return calcFn(a, b);
+}
+```

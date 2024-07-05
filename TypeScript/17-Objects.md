@@ -19,3 +19,5 @@ class Person {
 
 let person = new Person('Bob', 30);
 ```
+
+**Note** - A variable that is declared without a type annotation and then assigned an object as value will have type any. There is also an object type. However, it is best practice to annotate variables with the structure of the object as shown above.

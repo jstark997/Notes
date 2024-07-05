@@ -20,3 +20,23 @@ let isDone: boolean = false;
 let decimal: number = 6;
 let color: string = 'blue';
 ```
+
+Example - Type inference:
+
+```typescript
+let name;
+
+name = 'John';
+```
+
+In the above TypeScript infers that the variable 'name' is of type string because a string value was assigned to it. However, if a number had been assigned to the variable then TypeScript would infer that the variable is of type number.
+
+Example - Explicit type annotation:
+
+```typescript
+let name: string;
+
+name = 'John';
+```
+
+In the above the variable 'name' is annotated with the type string. Therefore TypeScript will only allow string values to be assigned to the variable.
